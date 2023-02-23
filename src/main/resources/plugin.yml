@@ -1,0 +1,8 @@
+name: Amegtester
+version: '${project.version}'
+main: xyz.larkyy.amegtester.Amegtester
+api-version: 1.19
+depend:
+  - AquaticModelEngine
+commands:
+  amegtester:
