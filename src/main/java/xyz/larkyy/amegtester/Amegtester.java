@@ -7,10 +7,12 @@ public final class Amegtester extends JavaPlugin {
 
     private static Amegtester instance;
     private EmoteHandler emoteHandler;
+    private ModelsHandler modelsHandler;
 
     @Override
     public void onLoad() {
         instance = this;
+        modelsHandler = new ModelsHandler();
         emoteHandler = new EmoteHandler();
     }
 
@@ -30,5 +32,9 @@ public final class Amegtester extends JavaPlugin {
 
     public EmoteHandler getEmoteHandler() {
         return emoteHandler;
+    }
+
+    public ModelsHandler getModelsHandler() {
+        return modelsHandler;
     }
 }
